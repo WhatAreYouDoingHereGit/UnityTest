@@ -1,0 +1,29 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class List : MonoBehaviour
+{
+    // Start is called before the first frame update
+    void Start()
+    {
+        List<string> studentList = new List<string>();
+        studentList.Add("°­´ë¿ø");
+        studentList.Add("¹Î¿µÈñ");
+        studentList.Add("¹ÚµÎÆÈ");
+        studentList.Add("¾È¼±»ý");
+        studentList.Add("ÇÔ¼öºó");
+        studentList.Add("±¸°æÀÏ"); // °¡´É
+
+        for (int i = 0; i < studentList.Count; i++)
+        {
+            Debug.Log(studentList[i]);
+        }
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}
